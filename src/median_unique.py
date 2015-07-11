@@ -14,7 +14,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         ifilename = os.path.abspath(sys.argv[1])
         tmp = os.path.basename(ifilename).split('.')
-	      # when run run.sh at cygwin, ifilename has weird non-ascii character at the end
+	# when run run.sh at cygwin, ifilename has weird non-ascii character at the end
         if (tmp[1] is not 'txt'):
             ifilename = os.path.join(os.path.dirname(ifilename), tmp[0]+'.txt')
     else:
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 2:
         ofilename = os.path.abspath(sys.argv[2])
-	      # when run run.sh at cygwin, ifilename has weird non-ascii character at the end
+	# when run run.sh at cygwin, ifilename has weird non-ascii character at the end
         tmp = os.path.basename(ofilename).split('.')
         if (tmp[1] is not 'txt'):
             ofilename = os.path.join(os.path.dirname(ofilename), tmp[0]+'.txt')
